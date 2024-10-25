@@ -1,0 +1,401 @@
+body {
+    background-color: bisque;
+    margin:0px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 150px;
+}
+
+h2 {
+    font-size: 35px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+.pHeading{
+    font-size: 35px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    background-color: rgb(138, 95, 35);
+    align-items: center;
+    font-size: 40px;
+    overflow: auto;
+
+}
+nav.sticky{
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+}
+
+nav a:link {
+    height: 60px;
+    font-weight: bold;
+    background-color: rgb(138, 95, 35);
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 60px;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+    color: rgb(248, 230, 208);
+}
+
+nav a:hover {
+    background-color: rgb(103, 62, 19);
+    text-decoration: underline;
+}
+
+p.font-sm {
+    font-size: 0.8rem;
+}
+
+footer {
+    background-color:rgb(236, 196, 147);
+    text-align: center;
+    position: absolute;
+    width: 100%;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.container img{
+    width:100%;
+    height:550px;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 1px 1px 55px black, 0 0 2em black, 0 0 0.2em black;
+}
+
+.homeGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 40px;
+    font-size: 20px;
+}
+.homeGrid img{
+    height:400px;
+    width:550px; 
+}
+
+.suppliesGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 100px;
+    margin-right: auto;
+    align-items: center;
+    width: 95%;
+    gap: 100px;
+}
+.suppliesGrid img{
+    height: 350px;
+    width: 450px;
+}
+.med-header {
+    text-align: center;
+}
+h2 a {
+    background-color: rgb(138, 95, 35);
+    color: rgb(248, 230, 208);
+    text-decoration: none;
+    font-size:50px;
+    margin:5px;
+    padding-left:10px;
+    padding-right:10px;
+}
+h2 a:hover {
+    background-color: rgb(103, 62, 19);
+    text-decoration: underline;
+}
+.productsGrid{
+    display:grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+}
+.productsGridItem{
+    text-align: center;
+}
+.productsGridItem img{
+    height: 250px;
+    width: 350px;
+}
+.form{
+    text-align: center;
+}
+input[type="date"]{
+    width: 40%;
+}
+input[type="text"]{
+    width: 40%;
+}
+input[type="email"]{
+    width: 40%;
+}
+textarea{
+    width:40%;
+}
+input[type="submit"]{
+    padding: 0.5em 1em;
+    margin-left: 435px;
+    background-color: rgb(138, 95, 35);
+    color:white;
+}
+.input label{
+    margin-right:485px;
+}
+.input2 label{
+    margin-right: 270px;
+}
+.input3 label{
+    margin-right: 350px;
+}
+.carousel-container{
+    width: 100%;
+    margin: 0 auto;
+
+    position: relative;
+}
+
+.carousel{
+    list-style-type: none;
+    width: 100%;
+    height: 550px;
+
+    position: relative;
+}
+
+.carousel-item{
+    height: 100%;
+    width: 100%;
+
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right:0;
+
+    transition: 300ms opacity ease-in-out;
+}
+
+.carousel-item.active{
+    opacity: 1;
+    transition-delay: 0ms;
+}
+
+.carousel-item > img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    
+}
+
+.carousel-btn{
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    font-weight: 25;
+    position: absolute;
+    top: 50%;
+    color: white;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.carousel-btn.left{
+    left: -0.25rem;
+}
+.carousel-btn.right{
+    right: -2.5rem;
+}
+
+.carousel-btn:hover{
+    cursor:pointer;
+    background-color:rgb(236, 196, 147);
+    color: white;
+}
+
+.carousel-nav{
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+    gap: 0.5rem;
+    
+}
+
+.nav-item{
+    height: 11px;
+    width: 11px;
+    background-color: black;
+    border-radius: 50%;
+    opacity: 0.3;
+
+    transition: 300ms opacity, ease-in-out;
+}
+
+.nav-item.active{
+    opacity: 0.7;
+}
+
+
+
+.accordion {
+    width: 80%;
+    margin: 1rem auto;
+    line-height: 1.5;
+}
+
+.accordion-label {
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 1rem 0.5rem;
+    text-align: left;
+    background-color: rgb(138, 95, 35);
+    opacity: 0.7;
+    border: none;
+    color: white;
+    position: relative;
+    transition: opacity 0.5s ease-out;
+}
+
+.accordion-content {
+    margin-bottom: 0.5rem;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s ease-in-out;
+}
+
+.accordion-content.open{
+    height: var(--content-height);
+    overflow: auto;
+}
+
+.accordion-label.open{
+    opacity: 1;
+}
+
+.accordion-label::after {
+    content: '+';
+    position: absolute;
+    right: 1rem;
+    font-size: 1.2rem;
+}
+.accordion-label.open::after{
+    content:'-';
+    font-size: 1.5rem;
+}
+
+.hide{
+    display: none;
+}
+.m-wrapper {
+    width: 500px;
+    height: 400px;
+    background: rgb(232, 202, 164);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: solid 2px;
+    z-index: 2;
+}
+
+.open-btn{
+    height:75px;
+    width: 350px;
+    font-size: 20px;
+    background: rgb(232, 202, 164);
+}
+
+.content p{
+    text-align: center;
+    text-decoration: underline;
+
+}
+
+.close-btn{
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+    text-align: center;
+   
+}
+.close-btn-wrapper{
+    text-align: right;
+    transform: translate(-10px, 10px);
+}
+.content ol li {
+    padding-bottom: 20px;
+}
+
+.scheme-container{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.colorScheme .color-title{
+    text-align: center;
+    font-size: 25px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.color-card{
+    height: 200px;
+    width: 200px;
+    padding: 10px;
+    background: #fff;
+    max-width:220px;
+    margin-bottom: 20px;
+}
+
+.color-hex{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+
+.reload-btn{
+    display: block;
+    margin: auto;
+    font-size: 20px;
+    padding:10px;
+    background: rgb(232, 202, 164);
+}
+
+.colorScheme .color-footer{
+    text-align: center;
+    font-size: 20px;
+}

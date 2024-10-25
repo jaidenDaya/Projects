@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateUserFragment" >
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/title2"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+        android:id="@+id/nameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:text="@string/name_text"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/enterName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/enterName"
+        app:layout_constraintVertical_bias="0.478" />
+
+        <EditText
+        android:id="@+id/enterName"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#2196F3"
+        android:ems="10"
+        android:hint="@string/name"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.274"
+        app:layout_constraintStart_toEndOf="@+id/nameText"
+        app:layout_constraintTop_toBottomOf="@+id/title2" />
+
+<TextView
+android:id="@+id/emailText"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginStart="44dp"
+android:text="@string/email_text"
+android:textSize="16sp"
+app:layout_constraintBottom_toBottomOf="@+id/enterEmail"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toTopOf="@+id/enterEmail" />
+
+<EditText
+android:id="@+id/enterEmail"
+android:layout_width="250dp"
+android:layout_height="45dp"
+android:layout_marginTop="24dp"
+android:layout_marginEnd="36dp"
+android:backgroundTint="#2196F3"
+android:ems="10"
+android:hint="@string/email"
+android:inputType="text"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="1.0"
+app:layout_constraintStart_toEndOf="@+id/emailText"
+app:layout_constraintTop_toBottomOf="@+id/enterName" />
+
+<TextView
+android:id="@+id/roleText"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginStart="44dp"
+android:layout_marginTop="44dp"
+android:text="@string/role_text"
+android:textSize="16sp"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/emailText" />
+
+<RadioGroup
+android:id="@+id/group"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginStart="24dp"
+android:layout_marginTop="24dp"
+app:layout_constraintStart_toEndOf="@+id/roleText"
+app:layout_constraintTop_toBottomOf="@+id/enterEmail">
+
+<RadioButton
+    android:id="@+id/studentButton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/student_button" />
+
+<RadioButton
+    android:id="@+id/employeeButton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/employee_button" />
+
+<RadioButton
+    android:id="@+id/otherButton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/other_button" />
+</RadioGroup>
+
+<Button
+android:id="@+id/nextButton"
+android:layout_width="380dp"
+android:layout_height="wrap_content"
+android:layout_marginBottom="16dp"
+android:text="@string/next_button"
+app:cornerRadius="12dp"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="0.54"
+app:layout_constraintStart_toStartOf="parent">
+
+</Button>
+</androidx.constraintlayout.widget.ConstraintLayout>

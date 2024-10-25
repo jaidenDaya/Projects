@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Assignment 07</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="back_label">Back</string>
+    <string name="book_title">Book Title:</string>
+    <string name="author">Author:</string>
+    <string name="genre">Genre:</string>
+    <string name="year">Year:</string>
+    <string name="genres">Genres</string>
+    <string name="books">Books</string>
+    <string name="genreSelected" />
+</resources>
